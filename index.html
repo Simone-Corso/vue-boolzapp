@@ -32,7 +32,9 @@
                     <input type="text" id="search-input" placeholder="Cerca o inizia una nuova chat">
                 </div>
                 <div class="contacts">
-                    <!-- TODO: contacts list will show up here -->
+                    <ul class="contacts-list">
+                        <li v-for="(contact, index) in contacts" :key="contact.id"></li>
+                    </ul>
                 </div>
             </section>
             <section class="conversation-container flex flex-column">
