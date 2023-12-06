@@ -21,6 +21,10 @@ div#app{
     height: auto;
 }
 
+span{
+    position: absolute;
+}
+
 main{
     height: 94%;
     width: 80%;
