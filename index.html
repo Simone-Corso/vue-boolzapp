@@ -33,7 +33,9 @@
                 </div>
                 <div class="contacts">
                     <ul class="contacts-list">
-                        <li v-for="(contact, index) in contacts" :key="contact.id"></li>
+                        <li v-for="(contact, index) in contacts" :key="contact.id">
+                            <img class="avatar" :src="'./img/avatar_1.jpg' + contact.id">
+                        </li>
                     </ul>
                 </div>
             </section>
