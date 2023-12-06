@@ -26,7 +26,7 @@ createApp({
                             status: 'received'
                         }
                     ],
-                },
+                 },
                 {
                     id: 1,
                     name: 'Fabio',
@@ -177,4 +177,8 @@ createApp({
             
         }
     },
-}).mount('#app');
+    mounted() {
+        console.log(this.contacts);
+      },
+    }
+).mount('#app');

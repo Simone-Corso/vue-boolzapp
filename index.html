@@ -33,8 +33,10 @@
                 </div>
                 <div class="contacts">
                     <ul class="contacts-list">
-                        <li v-for="(contacts, index) in contacts" :key="contacts.id">
-                            <img class="avatar" :src="'./img/avatar_1.jpg'">
+                        <li v-for="(contacts, index) in contacts" :key="index">
+                        <div>
+                            <img class="avatar" :src="contacts[0].avatar" alt="">
+                        </div>
                             <div>
                                 <span>{{ contacts.name }}</span> 
                                 <span>{{ contacts.date}}</span>
