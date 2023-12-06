@@ -30,6 +30,7 @@ main section.userbar{
 .user-profile > i{
 
     font-size: 25px;
+    margin-right: 1.5rem;
 }
 
 section div.user-profile{
