@@ -35,10 +35,13 @@
                     <ul class="contacts-list">
                         <li v-for="(contacts, index) in contacts" :key="index">
                             <img class="avatar" :src="contacts.avatar" alt="">
-                                <span>{{ contacts.name }}</span> 
-                                <p>
-                                    Ultimo messaggio inviato
-                                </p>
+                                <span>{{ contacts.name }}
+                                    <p>
+                                        Ultimo messaggio inviato
+                                    </p>
+                                    
+                                </span> 
+                                
                         </li>
                         
                     </ul>
