@@ -53,6 +53,9 @@ section div.user-profile{
     
 }
 
+ul,li{
+    list-style-type: none;
+}
 
 section.userbar div.notifications{
     height: 80px;
