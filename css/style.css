@@ -129,6 +129,13 @@ main section.conversation-container div.message-input{
     align-items: center;
 }
 
+.message-input > input{
+    width: 80%;
+    height: 35px;
+}
+
+
+
 .flex{
     display: flex;
 }
