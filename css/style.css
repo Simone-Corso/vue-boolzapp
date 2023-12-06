@@ -27,10 +27,19 @@ main section.userbar{
     background-color: #ffffff;
 }
 
+.user-profile > i{
+
+    font-size: 25px;
+}
+
 section div.user-profile{
     height: 70px;
     background-color: #eaeaea;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
+
 
 section.userbar div.notifications{
     height: 80px;
