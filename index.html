@@ -34,13 +34,8 @@
                 <div class="contacts">
                     <ul class="contacts-list">
                         <li v-for="(contacts, index) in contacts" :key="index">
-                        <div>
                             <img class="avatar" :src="contacts.avatar" alt="">
-                        </div>
-                            <div>
                                 <span>{{ contacts.name }}</span> 
-                                <span>{{ contacts.date}}</span>
-                            </div>
                         </li>
                         
                     </ul>
