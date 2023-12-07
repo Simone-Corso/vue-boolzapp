@@ -33,6 +33,9 @@
                 </div>
                 <div class="contacts">
                     <article  v-for="(contact, contactIndex) in contacts" @click="selectContact(contactIndex)">
+                        <p>
+                            <img :src="contact.avatar" alt="avatar">
+                        </p>
                         {{contact.name}}
                     </article>
                 </div>
@@ -47,8 +50,10 @@
                 </div>
                 <div class="messages clearfix">
                     <article v-for="message in contacts [activeContact].messages" class="message" :class="message.status ==='sent'? 'sent' : 'received'">
+
                         {{message.message}}
                         <span> {{message.date}}</span>
+                        
                     </article>
                     <article class="message sent">
                      
