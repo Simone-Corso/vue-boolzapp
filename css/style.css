@@ -21,6 +21,11 @@ div#app{
     height: auto;
 }
 
+
+img{
+
+    border-radius: 50%;
+}
 span{
     position: absolute;
 }
@@ -64,6 +69,7 @@ section div.user-profile{
 
 ul,li{
     list-style-type: none;
+    margin-left: 0.5rem;
 }
 
 section.userbar div.notifications{
