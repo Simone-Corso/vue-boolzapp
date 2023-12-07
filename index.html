@@ -46,7 +46,7 @@
 
                 </div>
                 <div class="messages clearfix">
-                    <article class="message received" v-for="message in contacts [activeContact].messages">
+                    <article v-for="message in contacts [activeContact].messages" class="message" :class="message.status ==='sent'? 'sent' : 'received'">
                         {{message.message}}
                        
                     </article>
