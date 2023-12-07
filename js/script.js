@@ -163,6 +163,7 @@ createApp({
                             date: '10/01/2020 15:30:55',
                             message: 'Ciao, andiamo a mangiare la pizza stasera?',
                             status: 'received'
+
                         },
                         {
                             date: '10/01/2020 15:50:00',
@@ -173,7 +174,9 @@ createApp({
                             date: '10/01/2020 15:51:00',
                             message: 'OK!!',
                             status: 'received'
-                        }
+            
+                        },
+                    
                     ],
                 }
             ]
@@ -191,7 +194,12 @@ createApp({
 
         sendMessage() {
             if (this.newMessage.trim() !== '') {
-                this.contacts[this.activeContact].push({text: this.newMessage, sender: 'user'});
+                this.contacts[this.activeContact].messages.push({ 
+                    message: this.newMessage,
+                    status:'sent',
+                    date: '10/01/2020 15:51:00'
+                    });
+                console.log('Messaggio inviato:', this.newMessage);
             };
             this.newMessage = '';
         }
