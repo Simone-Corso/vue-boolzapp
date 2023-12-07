@@ -46,18 +46,14 @@
 
                 </div>
                 <div class="messages clearfix">
-                    <article class="message received">
-                        Sciao Belo, stasero vieno?
+                    <article class="message received" v-for="message in contacts [activeContact].messages">
+                        {{message.message}}
+                       
                     </article>
                     <article class="message sent">
-                        No dottoressa, veramente sarei occupato.
+                     
                     </article>
-                    <article class="message received">
-                        Si ma tu ha serio problemo, sposto sembro!
-                    </article>
-                    <article class="message sent">
-                        Se vengo da una psichiatra ci sara' un motivo!!!!
-                    </article>
+            
                 </div>
                 <div class="message-input">
                     <input type="text" id="message-input" placeholder="">
