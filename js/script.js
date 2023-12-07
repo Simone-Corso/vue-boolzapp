@@ -192,6 +192,17 @@ createApp({
         },
         //creiamo un metodo per potere inviare un message
 
+        visibleMarco(){
+            const userName = "Marco";
+            const userCorto = "mar"
+
+        if (userName.charAt().includes(userCorto).charAt()){
+        else { userCorto};
+    }
+
+        },
+
+
         sendMessage() {
             if (this.newMessage.trim() !== '') {
                 this.contacts[this.activeContact].messages.push({ 
@@ -204,6 +215,8 @@ createApp({
             this.newMessage = '';
         }
       },
-    
-    
+
+      searchUtent() {
+
+      }
     }).mount('#app');
