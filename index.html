@@ -50,8 +50,7 @@
                 </div>
                 <div class="messages clearfix">
                     <article v-for="message in contacts [activeContact].messages" class="message" :class="message.status ==='sent'? 'sent' : 'received'">
-
-                        {{message.message}}
+                            {{message.message}}
                         <span> {{message.date}}</span>
                         
                     </article>
@@ -61,7 +60,7 @@
             
                 </div>
                 <div class="message-input">
-                    <input type="text" id="message-input" placeholder="">
+                    <input v-model="newMessage" @keyup.enter="sendMessage" placeholder="invia un messaggio">
                 </div>
             </section>
         </main>

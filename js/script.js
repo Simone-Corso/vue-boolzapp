@@ -184,7 +184,9 @@ createApp({
       methods:{
         selectContact(index){
             this.activeContact = index;
-        }
-      }
-    }
-).mount('#app');
+        },
+        //creiamo un metodo per potere inviare un message
+      },
+    
+    
+    }).mount('#app');

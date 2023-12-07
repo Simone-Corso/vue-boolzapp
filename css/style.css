@@ -23,10 +23,12 @@ div#app{
 
 
 img{
-
+    height: auto;
+    width: 60px;
     border-radius: 50%;
 }
-span{
+p{
+    display: inline-block;
     
 }
 
@@ -125,7 +127,7 @@ div.messages{
     height: calc(100% - 145px);
     background-image: url('../img/mine.jpg');
     padding: 2rem;
-    overflow: auto;
+    overflow: y;
 }
 
 div.messages > article.message{
