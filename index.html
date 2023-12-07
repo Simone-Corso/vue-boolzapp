@@ -29,7 +29,7 @@
                     <i class="fa-solid fa-bell-slash"></i>
                 </div>
                 <div class="searchbar">
-                    <input v-model="searchTerm" placeholder="Cerca utenti">
+                    <input v-model="searchUtent" placeholder="Cerca utenti">
                 </div>
                 <div class="contacts">
                     <article  v-for="(contact, contactIndex) in contacts" @click="selectContact(contactIndex)">
@@ -60,7 +60,7 @@
             
                 </div>
                 <div class="message-input">
-                    <input v-model="newMessage" @keyup.enter="sendMessage" placeholder="invia un messaggio">
+                    <input v-model="sendMessage" @keyup.enter="sendMessage" placeholder="invia un messaggio">
                 </div>
             </section>
         </main>
