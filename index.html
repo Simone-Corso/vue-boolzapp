@@ -32,8 +32,8 @@
                     <input type="text" id="search-input" placeholder="Cerca o inizia una nuova chat">
                 </div>
                 <div class="contacts">
-                    <article>
-                        
+                    <article  v-for="contact in contacts">
+                        {{contact.name}}
                     </article>
                 </div>
             </section>
