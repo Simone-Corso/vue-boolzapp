@@ -181,5 +181,10 @@ createApp({
     mounted() {
         console.log(this.contacts);
       },
+      methods:{
+        selectContact(index){
+            this.activeContact = index;
+        }
+      }
     }
 ).mount('#app');
