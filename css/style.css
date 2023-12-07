@@ -108,6 +108,13 @@ section.userbar div.contacts{
     background-color: #ffffff;
 }
 
+section.userbar div.contacts > article{
+    width: 100%;
+    padding: 1.5rem;
+    border: solid 2px magenta;
+
+}
+
 main section.conversation-container{
     width: 65%;
     background-color: #eaeaea;
