@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            newMessage: "",
             activeContact: 0,
             contacts: [
                 {
@@ -186,6 +187,13 @@ createApp({
             this.activeContact = index;
         },
         //creiamo un metodo per potere inviare un message
+
+        sendMessage() {
+            if (this.newMessage.trim() !== '') {
+                this.messages[this.activeContact].push({text: this.newMessage, sender: 'user'});
+            };
+            this.newMessage = '';
+        }
       },
     
     
