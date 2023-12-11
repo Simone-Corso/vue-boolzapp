@@ -75,6 +75,17 @@ section div.user-profile{
     font-size: 25px;
 }
 
+.icon-michele{
+    color: #B1B1B1;
+    font-size: 25px;
+
+}
+
+.icon-michele > i{
+
+    margin-right: 1.5rem;
+}
+
 .icon-sofia > i{
     margin-right: 1.5rem
 }
