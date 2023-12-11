@@ -71,6 +71,25 @@ section div.user-profile{
     
 }
 
+.sofia > p{
+    position: fixed;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.michele > span{
+    position: fixed;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.michele > p {
+    position: fixed;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+}
+
+
 .icon-sofia{
     color: #B1B1B1;
     font-size: 25px;
