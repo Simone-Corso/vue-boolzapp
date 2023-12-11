@@ -194,17 +194,24 @@ createApp({
 
         sendMessage() {
             if (this.newMessage.trim() !== '') {
-                this.contacts[this.activeContact].messages.push({ 
+                this.contacts[this.activeContact].messages.push({
                     message: this.newMessage,
-                    status:'sent',
+                    status: 'sent',
                     date: '10/01/2020 15:51:00'
-                    });
+                });
                 console.log('Messaggio inviato:', this.newMessage);
-            };
+
+                setTimeout(() => {
+                    this.contacts[this.activeContact].messages.push({
+                        message: 'OK',
+                        status: 'received',
+                        date: '10/01/2020 15:51:01'
+                    });
+                    this.showOkResponse = true;
+                }, 1000);
+            }
             this.newMessage = '';
         },
-
-
 
         searchContacts() {
             const query = this.searchQuery.toLowerCase().trim();
@@ -219,11 +226,7 @@ createApp({
             );
         },
     },
-        watch: {
-                searchQuery: 'searchContacts',
-             },
-
-
-      
-      },
-    ).mount('#app');
+    watch: {
+        searchQuery: 'searchContacts',
+    },
+}).mount('#app');
