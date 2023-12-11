@@ -54,14 +54,20 @@
                         <span> {{message.date}}</span>
                         
                     </article>
-            
                 </div>
                 <div class="message-input">
-                    <div>
+                    <div class="smile">
                     <i class="fa-regular fa-face-smile"></i>
                 </div>
                     <input v-model="newMessage" @keyup.enter="sendMessage" placeholder="invia un messaggio">
+                    <div class="mic">
+                    <i class="fa-solid fa-microphone"></i>
                 </div>
+                </div>
+
+                
+                
+            
             </section>
         </main>
     </div>
