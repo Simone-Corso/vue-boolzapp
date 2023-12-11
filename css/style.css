@@ -64,10 +64,21 @@ section div.user-profile{
     height: 70px;
     background-color: #eaeaea;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     
 }
+
+.icon-sofia{
+    color: #B1B1B1;
+    font-size: 25px;
+}
+
+.icon-sofia > i{
+    margin-right: 1.5rem
+}
+
+
 
 ul,li{
     list-style-type: none;
