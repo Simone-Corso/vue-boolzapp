@@ -105,7 +105,7 @@ section.userbar div.notifications{
     justify-content: flex-start;
     align-items: center;
 }
-
+    
 .notifiche{
     margin-left: .8rem;
     font-size: 30px;
@@ -117,6 +117,10 @@ section.userbar div.notifications{
 .notifiche > i {
 font-size: 25px;
 color: #8EDAFC;
+}
+
+.ricevi-notifiche{
+    margin-left: .5rem;
 }
 
 
