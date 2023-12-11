@@ -25,6 +25,7 @@ div#app{
 img{
     height: auto;
     width: 60px;
+    border-radius: 50%;
 }
 
 p{
