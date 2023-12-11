@@ -127,7 +127,7 @@ div.messages{
     height: calc(100% - 145px);
     background-image: url('../img/mine.jpg');
     padding: 2rem;
-    overflow: y;
+    overflow: auto;
 }
 
 div.messages > article.message{
