@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            filteredContacts: [],
             searchQuery: '',
             newMessage: "",
             activeContact: 0,

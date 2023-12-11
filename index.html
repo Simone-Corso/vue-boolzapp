@@ -8,9 +8,6 @@
     </title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -40,7 +37,7 @@
                 </div>
                 </div>
                 <div class="searchbar">
-                    <input v-model="searchQuery" @input="searchQuery" placeholder="🔍 Cerca utenti">
+                    <input v-model="searchQuery" @input="searchQuery" placeholder="Cerca utenti">
                 </div>
                 <div class="contacts">
                     <article  v-for="(contact, contactIndex) in filteredContacts" @click="selectContact(contactIndex)">
