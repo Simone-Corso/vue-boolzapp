@@ -29,10 +29,10 @@
                     <i class="fa-solid fa-bell-slash"></i>
                 </div>
                 <div class="searchbar">
-                    <input v-model="searchUtent" placeholder="Cerca utenti">
+                    <input v-model="searchQuery" @input="searchQuery" placeholder="Cerca utenti">
                 </div>
                 <div class="contacts">
-                    <article  v-for="(contact, contactIndex) in contacts" @click="selectContact(contactIndex)">
+                    <article  v-for="(contact, contactIndex) in filteredContacts" @click="selectContact(contactIndex)">
                         <p>
                             <img :src="contact.avatar" alt="avatar">
                         </p>

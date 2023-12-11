@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            searchUtent: '',
+            searchQuery: '',
             newMessage: "",
             activeContact: 0,
             contacts: [
@@ -192,17 +192,6 @@ createApp({
         },
         //creiamo un metodo per potere inviare un message
 
-        visibleMarco(){
-            const userName = "Marco";
-            const userCorto = "mar"
-
-        if (userName.charAt().includes(userCorto).charAt()){
-        else { userCorto};
-    }
-
-        },
-
-
         sendMessage() {
             if (this.newMessage.trim() !== '') {
                 this.contacts[this.activeContact].messages.push({ 
@@ -213,10 +202,28 @@ createApp({
                 console.log('Messaggio inviato:', this.newMessage);
             };
             this.newMessage = '';
-        }
+        },
+
+
+
+        searchContacts() {
+            const query = this.searchQuery.toLowerCase().trim();
+
+            if (!query) {
+               
+                this.filteredContacts = this.contacts;
+                return;
+            }
+            this.filteredContacts = this.contacts.filter(contact =>
+                contact.name.toLowerCase().includes(query)
+            );
+        },
+    },
+        watch: {
+                searchQuery: 'searchContacts',
+             },
+
+
+      
       },
-
-      searchUtent() {
-
-      }
-    }).mount('#app');
+    ).mount('#app');
