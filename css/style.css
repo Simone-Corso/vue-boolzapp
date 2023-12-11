@@ -106,13 +106,19 @@ section.userbar div.notifications{
     align-items: center;
 }
 
-.notifications > i{
-    font-size: 35px;
+.notifiche{
+    margin-left: .8rem;
+    font-size: 30px;
     background-color: white;
     border-radius: 50%;
-    margin-left: 1.5rem;
-
+    padding: 8px;
 }
+
+.notifiche > i {
+font-size: 25px;
+color: #8EDAFC;
+}
+
 
 section.userbar div.searchbar{
     height: 60px;
@@ -195,6 +201,8 @@ main section.conversation-container div.message-input{
 .mic{
     margin-right: 1.5rem;
 }
+
+
 
 
 .flex{

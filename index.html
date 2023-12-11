@@ -30,7 +30,9 @@
                     
                 </div>
                 <div class="notifications">
+                    <div class="notifiche">
                     <i class="fa-solid fa-bell-slash"></i>
+                </div>
                 </div>
                 <div class="searchbar">
                     <input v-model="searchQuery" @input="searchQuery" placeholder="🔍 Cerca utenti">
@@ -67,7 +69,7 @@
                     <div class="smile">
                     <i class="fa-regular fa-face-smile"></i>
                 </div>
-                    <input v-model="newMessage" @keyup.enter="sendMessage" placeholder="invia un messaggio">
+                    <input v-model="newMessage" @keyup.enter="sendMessage" placeholder="scrivi un messagio">
                     <div class="mic">
                     <i class="fa-solid fa-microphone"></i>
                 </div>
